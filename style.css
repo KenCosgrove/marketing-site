@@ -128,12 +128,13 @@ table {
 html {
   font-size: 110%;
 }
+
 body {
   font-family: "Mulish", sans-serif;
   background: rgb(255, 90, 96);
 }
 
-/* header/nav styles*/
+/* header/nav styles */
 
 header {
   display: flex;
@@ -223,6 +224,7 @@ span a:hover {
   justify-content: center;
   flex-basis: 60%;
 }
+
 .one {
   margin-left: 2rem;
 }
@@ -231,10 +233,12 @@ span a:hover {
   justify-content: center;
   padding-bottom: 5rem;
 }
+
 .flexbox-pics {
   padding-left: 3rem;
   margin-bottom: 2rem;
 }
+
 .flexbox-pics img {
   height: 10rem;
   width: 10rem;
@@ -283,7 +287,7 @@ button:hover {
   color: rgb(255, 90, 96);
 }
 
-/* bottom cards section */
+/* bottom 3cards section */
 
 .card-content {
   display: flex;
@@ -349,6 +353,7 @@ footer nav a:hover {
   padding: 1rem 0;
   margin-top: 2rem;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -405,16 +410,20 @@ p {
   .container {
     margin-top: 0;
   }
+
   footer nav {
     padding: 1rem;
   }
+
   html {
     font-size: 100%;
   }
+
   .content {
     flex-basis: 80%;
     justify-content: space-between;
   }
+
   .card-content {
     width: 90%;
   }
@@ -436,14 +445,57 @@ p {
 /* contact page styles */
 
 .contact {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   line-height: 2rem;
-  padding: 12rem 0;
+  padding: 10% 0;
+  padding-left: 3rem;
+}
+
+* {
+  position: relative;
+}
+
+.contact::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("https://images.unsplash.com/photo-1512626120412-faf41adb4874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")
+    center/cover;
+  opacity: 0.4;
+}
+
+.contact h1 {
+  text-shadow: 4px 3px rgb(255, 90, 96);
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  text-shadow: 2px 1px black;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+input {
+  width: 12rem;
+}
+
+.message {
+  height: 4rem;
 }
 
 @media (max-width: 1000px) {
@@ -473,6 +525,7 @@ p {
   html {
     font-size: 90%;
   }
+
   span {
     border-bottom: none;
   }
@@ -489,6 +542,7 @@ p {
     height: 5rem;
     width: 5rem;
   }
+
   button {
     font-size: 1.2rem;
     border: 2px solid white;
@@ -496,11 +550,13 @@ p {
     padding: 0.6rem 1.4rem;
     margin-top: 1rem;
   }
+
   .content {
     width: 90%;
     margin: 0 auto;
     padding: 2rem;
   }
+
   .content img {
     height: 14rem;
     width: 21rem;
@@ -513,13 +569,16 @@ p {
   .card {
     flex-basis: 48%;
   }
+
   .card:hover {
     flex-basis: 49%;
   }
+
   header {
     margin: 1rem auto;
     padding-bottom: 0;
   }
+
   header nav a {
     display: flex;
     flex-direction: column;
@@ -536,16 +595,19 @@ p {
     flex-direction: column;
     padding: 1rem;
   }
+
   .content img {
     height: 10rem;
     width: 15rem;
     margin-bottom: 1rem;
   }
+
   .middle-content {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
+
   .flexbox {
     flex-basis: 40%;
     margin-bottom: 1rem;
@@ -578,6 +640,7 @@ p {
   header nav a {
     line-height: 1.1rem;
   }
+
   .content img {
     height: 10rem;
     width: 15rem;
